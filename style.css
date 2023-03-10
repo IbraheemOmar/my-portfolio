@@ -72,14 +72,13 @@ list-style: none;
 }
 #home nav ul li a{
 color: white;
-/* font-weight: lighter; */
 line-height: 24px;
 font-size: 14px;
 text-decoration: none;
 letter-spacing:2px;
 
 }
- nav ul li a p{
+ #home nav ul li a p{
     height: 2px;
     width: 0%;
     background: springgreen;
@@ -252,6 +251,10 @@ overflow: hidden;
     justify-content: center;
     background-color: white;
     z-index: 100;
+    border: 2px springgreen solid;
+    box-shadow: 0 0 100px 2px #00ff805f,
+    0px 0px  10px springgreen,
+    0 0px  25px springgreen;
 }
 
 .container{
@@ -276,8 +279,8 @@ grid-gap: 0;
     height: 110vh;
     width: 100%;
     overflow: hidden;
-    background: var(--primary);
-    border: 3px springgreen solid;
+    /* background: var(--primary); */
+
     border-bottom: none;
 
 }
@@ -289,7 +292,8 @@ grid-gap: 0;
     align-items: center;
     justify-content: center;
     margin: 0;
-    background: var(--primary);
+    /* background: var(--primary); */
+    
 }
 .about-right{
     overflow: hidden;
@@ -299,10 +303,9 @@ grid-gap: 0;
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     width:650px;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
     overflow: hidden;
 
 }
@@ -310,13 +313,13 @@ grid-gap: 0;
     font-weight: bold;
     letter-spacing: 7px;
     font-size: 60px;
-    margin: 30px 100px 0px;
+    margin: 10px 100px 0px;
     font-family: 'Merriweather Sans', sans-serif;
     color: var(--primary);
     text-transform: uppercase;
     cursor: default;
     overflow: hidden;
-    color: springgreen;
+    color:var(--primary)
 }
 
 .about-left h2{
@@ -325,7 +328,7 @@ grid-gap: 0;
     font-size: 30px;
     text-transform: capitalize;
     /* margin-bottom: 20px; */
-color: white;
+color: var(--primary);
 transition: .4s all   ;
 cursor: default;
     overflow: hidden;
@@ -342,11 +345,11 @@ opacity: .912;
     letter-spacing: 1px;
     line-height: 22px;
     font-size: 14px;
-    color: white;
+   color: #000042;
 
 }
 .about-left ul li p{
-    color: white;
+    color: var(--primary);
     
     
 }
@@ -374,28 +377,9 @@ height: 100%;
 }
 
 
-
-
-
 /* end of about me section */
 
 
-
-/* the projects section */
-
-
-
-
-
-
-
-/* end of projects section */
-
-
-/* services section */
-
-
-/* end of services section */
 
 .up-button{
     position: fixed;
@@ -417,9 +401,17 @@ height: 100%;
     color: springgreen;
     font-size: 36px;
 }
+
+
+
+
+
 /* project section */
 
-
+#projects{
+    margin-top: 1px;
+    border-top: 2px rgb(228, 228, 228) solid;
+}
 #projects .project-list{
     display:    grid;
     grid-template-columns: 1fr 1fr;
@@ -532,10 +524,45 @@ transition: .5s all;
 }
 
 #projects .project a:hover{
+    
     border: 3px rgb(0, 207, 104) solid;
     color: rgb(0, 207, 104);
     /* background: springgreen; */
 }
+
+.project .img-container{
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.project i{
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border: 2px var(--primary) solid;
+    border-radius: 50%;
+    color: var(--primary);
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.project i:hover{
+    transform: scale(1.1);
+    border: 2px rgb(0, 207, 104) solid;
+    color: rgb(0, 207, 104);
+}
+
+
+
 /* end of project section */
 
 /* contacts section */
@@ -561,9 +588,10 @@ height: 100vh;
 margin: 0;
 display: flex;
 flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     /* align-items: center; */
     flex-wrap: wrap;
+    margin-left: 8%;
 
 }
 
