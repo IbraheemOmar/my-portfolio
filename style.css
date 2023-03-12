@@ -375,9 +375,12 @@ list-style: circle;
     transition: .3s transform;
 overflow: hidden;
 
-height: 100%;
-    width: 100%;
-    align-self: flex-end;
+height: 600px;
+    width: 600px;
+    align-self: center;
+    position: relative;
+    top: -200px;
+
     
     
 }
