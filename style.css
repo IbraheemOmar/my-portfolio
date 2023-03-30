@@ -375,11 +375,12 @@ list-style: circle;
     transition: .3s transform;
 overflow: hidden;
 
-height: 600px;
-    width: 600px;
+height: 1000px;
+    width: 1300px;
     align-self: center;
     position: relative;
-    top: -200px;
+    top: -250px;
+    left: 70px;
 
     
     
