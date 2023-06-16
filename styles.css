@@ -506,7 +506,7 @@ transition: .2s;
 
 .form-container{
     border-top: 2px rgb(210, 210, 210) solid;
-    
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
